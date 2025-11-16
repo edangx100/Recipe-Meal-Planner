@@ -294,20 +294,3 @@ adk web --port 8001 agents_web
 lsof -i :8000  # Find the PID
 kill -9 <PID>  # Replace <PID> with the actual process ID
 ```
-
-**Problem: No response when submitting queries in web UI**
-
-**Solution:** Make sure you're using the correct command:
-```bash
-adk web agents_web  # ✓ Correct - includes the agents directory
-adk web             # ✗ Wrong - won't find the agent
-```
-
-**Problem: Slow responses (30-60 seconds)**
-
-This is normal! The agent performs multiple complex operations:
-1. LangGraph state machine for recipe selection (4 nodes)
-2. Code execution for cost calculations
-3. Response formatting
-
-For more detailed troubleshooting, see `ADK_WEB_SETUP.md` and `QUICK_START.md`.
