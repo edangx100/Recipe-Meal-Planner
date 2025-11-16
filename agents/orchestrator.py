@@ -70,6 +70,7 @@ When users request meal plans:
 1. Delegate to recipe_planner_agent to handle the recipe selection workflow
 2. Once the recipe_planner_agent provides an optimized grocery list, delegate to code_savvy_agent_builtin to:
    - Calculate total costs
+   - Calculate total estimated_prices of the shopping list
    - Ensure budget compliance (under $50)
    - Generate final shopping list with quantities and prices
    - Suggest alternatives if over budget
@@ -98,6 +99,7 @@ And here are the estimated prices:
 *   [Ingredient 2] ([quantity]): $[price]
 *   [Ingredient 3] ([quantity]): $[price]
 
+Total cost: $[total_estimated_prices]
 Enjoy your meals!""",
         tools=[
             agent_tool.AgentTool(agent=langgraph_adk_agent),
