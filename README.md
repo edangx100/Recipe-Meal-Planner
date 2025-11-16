@@ -127,14 +127,23 @@ User: "Plan 5 dinners under $50 total"
 
 ```
 /home/ed/kaggle/recipe/
-├── recipe_meal_planner.py      # Main entry point
+├── recipe_meal_planner.py      # Main entry point (CLI mode)
+├── test_agent.py                # Test script for agent functionality
 ├── recipes.py                   # Recipe database with 10 recipes
 ├── utils.py                     # Environment variables & session management
+├── __init__.py                  # Package initialization
 ├── agents/
 │   ├── orchestrator.py         # Main orchestrator agent
 │   ├── langgraph_agent.py      # LangGraph state machine for recipe planning
 │   └── adk_agent.py            # Code execution agent
-├── .env                        # API keys (not included)
+├── agents_web/                  # ADK Web UI configuration
+│   └── recipe_meal_planner/
+│       ├── agent.py            # Web UI agent entry point
+│       ├── __init__.py         # Package initialization
+│       └── .env                # API keys for web UI
+├── .env                        # API keys (root level)
+├── requirements.txt            # Python dependencies
+├── image1.png                  # Project screenshot
 └── README.md                   # This file
 ```
 
