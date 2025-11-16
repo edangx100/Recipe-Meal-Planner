@@ -6,11 +6,15 @@ This module contains the main orchestrator agent that coordinates between:
 - code_savvy_agent_builtin: Budget optimization with code execution
 """
 
-# Compatibility shim for google-adk 1.18.0 with LangGraph 0.6.x
-# google-adk expects CompiledGraph from langgraph.graph.graph, but in 0.6.x it's in langgraph.graph.state
+# Compatibility shim for google-adk with LangGraph 1.0.x
+# google-adk expects CompiledGraph from langgraph.graph.graph, but in newer versions it's in langgraph.graph.state
 # This must be imported BEFORE google.adk modules
 import sys
+import os
 from types import ModuleType
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 try:
     from langgraph.graph.state import CompiledStateGraph
     # Create the old module path that google-adk expects
@@ -24,10 +28,6 @@ except ImportError:
 from google.adk.agents import Agent as AdkAgent
 from google.adk.agents.langgraph_agent import LangGraphAgent
 from google.adk.tools import agent_tool
-
-import sys
-import os
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from utils import DEFAULT_REASONING_LLM
 from agents.langgraph_agent import (
