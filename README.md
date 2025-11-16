@@ -45,21 +45,7 @@ This project demonstrates a multi-agent architecture where specialized AI agents
 
 ## Recipe Database
 
-The system includes 10 pre-configured recipes in `recipes.py`:
-
-| Recipe | Estimated Cost | Dietary Tags |
-|--------|---------------|--------------|
-| Spaghetti Aglio e Olio | $4.50 | vegetarian, vegan |
-| Chicken Stir-Fry | $8.99 | gluten-free |
-| Black Bean Tacos | $10.00 | vegetarian, vegan, gluten-free |
-| Lentil Soup | $6.50 | vegetarian, vegan, gluten-free |
-| Baked Salmon with Veggies | $10.99 | gluten-free, low-carb |
-| Veggie Fried Rice | $5.00 | vegetarian |
-| Margherita Pizza | $9.00 | vegetarian |
-| Greek Salad | $11.25 | vegetarian, gluten-free, low-carb |
-| Beef Chili | $10.74 | gluten-free |
-| Mushroom Risotto | $15.00 | vegetarian, gluten-free |
-
+The system includes 10 pre-configured recipes in `recipes.py`.  
 Each recipe includes detailed ingredient lists with quantities and individual prices.
 
 ## Workflow
