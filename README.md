@@ -20,7 +20,7 @@ This project demonstrates a multi-agent architecture where specialized AI agents
 
 ## Technical Features
 
-### 1. Multi-agent System ✅
+### ✅1. Multi-agent System 
 
 **Three LLM-Powered Agents**
 
@@ -28,7 +28,7 @@ This project demonstrates a multi-agent architecture where specialized AI agents
 2. **Recipe Planner Agent** (`agents/orchestrator.py`)
 3. **Code Savvy Agent** (`agents/adk_agent.py`)
 
-### 2. Tools ✅
+### ✅2. Tools 
 
 **Custom Tools:**
 - **AgentTool** (`agents/orchestrator.py`) - Wraps agents as callable tools for delegation
@@ -36,7 +36,7 @@ This project demonstrates a multi-agent architecture where specialized AI agents
 **Built-in Tools:**
 - **BuiltInCodeExecutor** (`agents/adk_agent.py`) - Enables dynamic Python code generation and execution for budget calculations and cost optimization
 
-### 3. Sessions & Memory ✅
+### ✅3. Sessions & Memory 
 
 **Session Management:**
 - **InMemorySessionService** (`utils.py`) - Creates and manages user sessions with session_id and user_id tracking
