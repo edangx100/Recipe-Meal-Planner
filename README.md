@@ -253,9 +253,6 @@ The script includes two test scenarios:
 ### Expected Output
 
 ```
-===========================================
---- Meal Planning Request 1 ---
-===========================================
 YOU: Plan 5 dinners under $50 total
 
 ORCHESTRATOR: Here is your meal plan:
