@@ -133,8 +133,9 @@ User: "Plan 5 dinners under $50 total"
 # Install uv if you haven't already
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
-# Clone or navigate to the project directory
-cd /home/ed/kaggle/recipe
+# Clone the repository
+git clone https://github.com/edangx100/Recipe-Meal-Planner.git
+cd Recipe-Meal-Planner
 
 # Create virtual environment and install dependencies
 uv venv
@@ -160,16 +161,6 @@ DEFAULT_REASONING_LLM=gemini-2.5-flash    # For orchestrator
 To get a Google API key, visit: https://aistudio.google.com/app/apikey
 
 These values are loaded from environment variables with sensible defaults in `utils.py`.
-
-### Verifying Installation
-
-```bash
-# Ensure virtual environment is activated
-# You should see (.venv) in your terminal prompt
-
-# Verify key packages are installed
-python -c "import google.genai; import langgraph; print('Installation successful!')"
-```
 
 ## Usage
 
