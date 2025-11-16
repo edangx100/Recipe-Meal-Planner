@@ -59,8 +59,6 @@ This project demonstrates a multi-agent architecture where specialized AI agents
   2. `suggest_recipes`: Selects recipes from database based on preferences
   3. `check_overlap`: Identifies shared ingredients across selected recipes
   4. `optimize_list`: Consolidates ingredients into a unified shopping list
-- **State Management**: Uses MemorySaver for checkpointing between nodes
-- **Output**: Triggers `[CALCULATE_COST]` flag when ready for cost calculation
 
 <p align="center">
   <img src="langgraph_image.png" alt="LangGraph State Machine" width="16%">
